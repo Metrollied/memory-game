@@ -2,7 +2,7 @@
 	"name": "memory-game",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://Metrollied.github.io/memory-game/",
+	"homepage": "https://metrollied.github.io/memory-game/",
 	"dependencies": {
 		"@nastyox/rando.js": "^2.0.5",
 		"@testing-library/jest-dom": "^5.16.2",
@@ -15,7 +15,7 @@
 	},
 	"scripts": {
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+		"deploy": "gh-pages -b master -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
