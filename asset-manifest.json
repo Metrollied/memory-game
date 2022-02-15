@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.37bae7e8.css",
+    "main.js": "/memory-game/static/js/main.a0384bc9.js",
+    "static/media/brandon-grotesque-bold.otf": "/memory-game/static/media/brandon-grotesque-bold.9ad36c335e917b52911d.otf",
+    "static/media/brandon-grotesque.otf": "/memory-game/static/media/brandon-grotesque.95ad7c074ed2d68ee886.otf",
+    "static/media/snowflake.svg": "/memory-game/static/media/snowflake.50fa8229f7715d9fb2fb.svg",
+    "static/media/umbrella.svg": "/memory-game/static/media/umbrella.3d14abdde695aa86d0c2.svg",
+    "static/media/cricket.svg": "/memory-game/static/media/cricket.7f078697160bb11f2be5.svg",
+    "static/media/train.svg": "/memory-game/static/media/train.4a1dfa03b792cab08f97.svg",
+    "static/media/apple.svg": "/memory-game/static/media/apple.dec0df1466f8c34c2f19.svg",
+    "static/media/bowling.svg": "/memory-game/static/media/bowling.0c2f8fa3cd197035b3f2.svg",
+    "static/media/star.svg": "/memory-game/static/media/star.a03b364a8849262026a9.svg",
+    "static/media/ufo.svg": "/memory-game/static/media/ufo.6e9554837abe65e20f54.svg",
+    "static/media/headphones.svg": "/memory-game/static/media/headphones.4269f23e2dbde71409e5.svg",
+    "static/media/music.svg": "/memory-game/static/media/music.06e64efd3d553bb25aa3.svg",
+    "static/media/bird.svg": "/memory-game/static/media/bird.43349c5be2c691fe062f.svg",
+    "static/media/tt-bat.svg": "/memory-game/static/media/tt-bat.8689916a65ce05ab8ea7.svg",
+    "static/media/house.svg": "/memory-game/static/media/house.3c635567159bfef5d9cf.svg",
+    "static/media/ship.svg": "/memory-game/static/media/ship.5832e5538db280c94eb4.svg",
+    "index.html": "/memory-game/index.html",
+    "main.37bae7e8.css.map": "/memory-game/static/css/main.37bae7e8.css.map",
+    "main.a0384bc9.js.map": "/memory-game/static/js/main.a0384bc9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37bae7e8.css",
+    "static/js/main.a0384bc9.js"
+  ]
+}
