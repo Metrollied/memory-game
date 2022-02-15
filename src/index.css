@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Brandon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/brandon-grotesque.otf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "BrandonBold";
+  font-style: oblique;
+  font-weight: normal;
+  src: url("./fonts/brandon-grotesque-bold.otf") format("truetype");
+
+}
+
+body {
+  margin: 0;
+  font-family: Brandon;
+  background-color: #6DB966;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+#root {
+	height: 100vh;
+}
+
+.App {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px;
+	height: 100%;
+}
+
+#header, #footer {
+	font-family: BrandonBold;
+	width: 100%;
+	height: 2em;
+	font-size: 30px;
+	background-color: #407f3c;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#scoreArea {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 2em;
+	font-family: BrandonBold;
+	color: white;
+	font-size: 20px;
+}
+
+#cardArea {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 2em;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	font-family: Brandon;
+	font-weight: bolder;
+	font-size: 20px;
+	color: white;
+	background-color: #407f3c;
+	border: solid 5px white;
+	border-radius: 15px;
+	width: 150px;
+	height: 200px;
+}
+
+.card:hover {
+	cursor: pointer;
+	background-color: #6DB966;
+}
+
+img {
+	height: 50px;
+	width: 50px;
 }
