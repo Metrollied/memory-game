@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/memory-game/static/css/main.37bae7e8.css",
-    "main.js": "/memory-game/static/js/main.a0384bc9.js",
+    "main.js": "/memory-game/static/js/main.c95c27e4.js",
     "static/media/brandon-grotesque-bold.otf": "/memory-game/static/media/brandon-grotesque-bold.9ad36c335e917b52911d.otf",
     "static/media/brandon-grotesque.otf": "/memory-game/static/media/brandon-grotesque.95ad7c074ed2d68ee886.otf",
     "static/media/snowflake.svg": "/memory-game/static/media/snowflake.50fa8229f7715d9fb2fb.svg",
@@ -20,10 +20,10 @@
     "static/media/ship.svg": "/memory-game/static/media/ship.5832e5538db280c94eb4.svg",
     "index.html": "/memory-game/index.html",
     "main.37bae7e8.css.map": "/memory-game/static/css/main.37bae7e8.css.map",
-    "main.a0384bc9.js.map": "/memory-game/static/js/main.a0384bc9.js.map"
+    "main.c95c27e4.js.map": "/memory-game/static/js/main.c95c27e4.js.map"
   },
   "entrypoints": [
     "static/css/main.37bae7e8.css",
-    "static/js/main.a0384bc9.js"
+    "static/js/main.c95c27e4.js"
   ]
 }
