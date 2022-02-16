@@ -104,7 +104,7 @@ function App() {
 	let numbers = [...Array(14).keys()];
 
 	const [random, setRandom] = useState(numbers.sort(randomSort));
-	const [cards, setCards] = useState(originalCards);
+	const cards = originalCards;
 	const [checkClicked, setCheckClicked] = useState(checkClickedArray)
 	const [score, setScore] = useState(0);
 	const [highScore, setHighscore] = useState(0);
