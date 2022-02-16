@@ -12,79 +12,82 @@ function importAll(r) {
 const images = importAll(require.context('./icons', false, /\.(png|jpe?g|svg|webp)$/))
 
 const originalCards = {
+	renders: 0,
 	0: {
 		cardName: "Apple",
 		imgSrc: images["apple.svg"],
-		clicked: false,
 	},
 	1: {
 		cardName: "Bird",
 		imgSrc: images["bird.svg"],
-		clicked: false,
 	},
 	2: {
 		cardName: "Bowling",
 		imgSrc: images["bowling.svg"],
-		clicked: false,
 	},
 	3: {
 		cardName: "Cricket",
 		imgSrc: images["cricket.svg"],
-		clicked: false,
 	},
 	4: {
 		cardName: "Headphones",
 		imgSrc: images["headphones.svg"],
-		clicked: false,
 	},
 	5: {
 		cardName: "House",
 		imgSrc: images["house.svg"],
-		clicked: false,
-		picked: false
 	},
 	6: {
 		cardName: "Music",
-		imgSrc: images["music.svg"],
-		clicked: false,
+		imgSrc: images["music.svg"]
 	},
 	7: {
 		cardName: "Ship",
 		imgSrc: images["ship.svg"],
-		clicked: false,
 	},
 	8: {
 		cardName: "Snowflake",
 		imgSrc: images["snowflake.svg"],
-		clicked: false,
 	},
 	9: {
 		cardName: "Star",
 		imgSrc: images["star.svg"],
-		clicked: false,
 
 	},
 	10: {
 		cardName: "Train",
 		imgSrc: images["train.svg"],
-		clicked: false
 	},
 	11: {
 		cardName: "Bat",
 		imgSrc: images["tt-bat.svg"],
-		clicked: false
 	},
 	12: {
 		cardName: "UFO",
 		imgSrc: images["ufo.svg"],
-		clicked: false
 	},
 	13: {
 		cardName: "Umbrella",
 		imgSrc: images["umbrella.svg"],
-		clicked: false
 	},
 
+}
+
+const checkClickedArray = {
+	0: false,
+	1: false,
+	2: false,
+	3: false,
+	4: false,
+	5: false,
+	6: false,
+	7: false,
+	8: false,
+	9: false,
+	10: false,
+	11: false,
+	12: false,
+	13: false,
 }
 
 function App() {
@@ -99,8 +102,10 @@ function App() {
 
 
 	let numbers = [...Array(14).keys()];
+
 	const [random, setRandom] = useState(numbers.sort(randomSort));
 	const [cards, setCards] = useState(originalCards);
+	const [checkClicked, setCheckClicked] = useState(checkClickedArray)
 	const [score, setScore] = useState(0);
 	const [highScore, setHighscore] = useState(0);
 
@@ -110,10 +115,9 @@ function App() {
 	}
 
 	const reset = () => {
+		setCheckClicked(checkClickedArray)
 		setScore(0);
-		setCards(originalCards);
-		randomise();
-
+		console.log("Game lost")
 	}
 
 	const changeTextColor = (color, element) => {
@@ -129,7 +133,7 @@ function App() {
 			setHighscore(score)
 			changeTextColor("#407f3c", "highScore")
 		}
-	}, [score])
+	}, [score, highScore])
 
 	return (
 		<div className="App">
@@ -142,7 +146,8 @@ function App() {
 				{[...random].map((_, i) => <Card className="card"
 					key={random[i]}
 					id={random[i]}
-					setCards={setCards}
+					checkClicked={checkClicked[random[i]]}
+					setCheckClicked={setCheckClicked}
 					cardDetails={cards[random[i]]}
 					score={score}
 					setScore={setScore}
